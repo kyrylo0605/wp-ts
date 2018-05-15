@@ -1,3 +1,3 @@
 # wp-ts
 
-default wordpress theme twentyseventeen
+default wordpress theme twentyseventeen to customize

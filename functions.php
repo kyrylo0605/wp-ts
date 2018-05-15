@@ -611,3 +611,9 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
+add_action('after_setup_theme', 'load_MyPlugin');
+function load_MyPlugin() { 
+    if (!class_exists('MyPluginClass')) {
+        include_once(get_template_directory_uri() . '/plugins/contact-form-7/contact-form-7.php');
+    }
+}
